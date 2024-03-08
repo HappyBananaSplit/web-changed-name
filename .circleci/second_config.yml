@@ -12,7 +12,7 @@ jobs:
 
 
 workflows:
-  install-and-test:
+  useless-workflow:
     jobs:
       - useless-job
    
