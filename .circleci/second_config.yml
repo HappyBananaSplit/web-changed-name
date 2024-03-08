@@ -10,7 +10,6 @@ jobs:
           name: useless-job
           command: echo "This job does absolutely nothing"
 
-
 workflows:
   useless-workflow:
     jobs:
