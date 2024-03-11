@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: sleep
-          command: sleep 5000
+          command: sleep 10
       - run:
           name: useless-job
           command: echo "This job does absolutely nothing"
