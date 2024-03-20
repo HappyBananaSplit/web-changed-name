@@ -1,20 +1,20 @@
 version: 2.1
 
 jobs:
-  useless-job:
+  test-branch-parameters:
     docker:
       - image: cimg/node:17.9.1
     steps:
       - checkout
       - run:
-          name: print default branch
+          name: print current branch
           command: echo "<< pipeline.trigger_parameters.github_app.branch >>"
       - run:
-          name: useless-job
-          command: echo "This job does absolutely nothing"
+          name: print default branch
+          command: echo "<< pipeline.trigger_parameters.github_app.default_branch >>"
 
 workflows:
   useless-workflow:
     jobs:
-      - useless-job
+      - test-branch-parameters
    
