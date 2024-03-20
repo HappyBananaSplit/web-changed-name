@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: print default branch
-          command: echo << pipeline.trigger_parameters.github_app.default_branch >>
+          command: echo "<< pipeline.trigger_parameters.github_app.default_branch >>"
       - run:
           name: useless-job
           command: echo "This job does absolutely nothing"
