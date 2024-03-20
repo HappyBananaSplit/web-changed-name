@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  useless-job:
+  test-branch-parameters:
     docker:
       - image: cimg/node:17.9.1
     steps:
@@ -19,5 +19,5 @@ jobs:
 workflows:
   useless-workflow:
     jobs:
-      - useless-job
+      - test-branch-parameters
    
