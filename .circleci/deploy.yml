@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  useless-job:
+  deploy-job:
     docker:
       - image: cimg/node:17.9.1
     steps:
@@ -14,7 +14,7 @@ jobs:
           command: echo "This job does absolutely nothing"
 
 workflows:
-  useless-workflow:
+  deploy-workflow:
     jobs:
-      - useless-job
+      - deploy-job
    
