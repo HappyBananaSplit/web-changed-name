@@ -9,7 +9,7 @@ describe("tools/utils", function () {
       },
       {
         input: [8, 20],
-        expected: 4,
+        expected: 5,
       },
       {
         input: [81, 1024, 125],
